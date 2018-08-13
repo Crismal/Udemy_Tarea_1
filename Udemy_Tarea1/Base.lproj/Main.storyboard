@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Udemy_Tarea1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soy Pobre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcM-3X-a8e">
+                                <rect key="frame" x="125" y="347.66666666666669" width="164" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeless" translatesAutoresizingMaskIntoConstraints="NO" id="lBn-0L-Hdd">
+                                <rect key="frame" x="147" y="388.66666666666669" width="120" height="240.00000000000006"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxY-K2-JOr">
+                                <rect key="frame" x="42" y="270.66666666666669" width="330" height="47"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Cambio el estado a Rico">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnCambiaEstado_Press:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wl8-6Z-AgI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1ra App de Cristian Almendro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFS-uq-wZC">
+                                <rect key="frame" x="16" y="20" width="382" height="81.666666666666671"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lBn-0L-Hdd" firstAttribute="top" secondItem="JcM-3X-a8e" secondAttribute="bottom" id="LkQ-EQ-Enx"/>
+                            <constraint firstItem="wxY-K2-JOr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mxi-cv-Rly"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jFS-uq-wZC" secondAttribute="trailing" constant="16" id="R4x-b6-Oys"/>
+                            <constraint firstItem="JcM-3X-a8e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rsp-Hm-XGQ"/>
+                            <constraint firstItem="jFS-uq-wZC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ru5-IZ-lv5"/>
+                            <constraint firstItem="JcM-3X-a8e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e3c-4R-41k"/>
+                            <constraint firstItem="JcM-3X-a8e" firstAttribute="top" secondItem="wxY-K2-JOr" secondAttribute="bottom" constant="30" id="eSP-Ag-yyg"/>
+                            <constraint firstItem="jFS-uq-wZC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jDb-FG-GL0"/>
+                            <constraint firstItem="jFS-uq-wZC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mIj-Dz-vb9"/>
+                            <constraint firstItem="lBn-0L-Hdd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pur-wW-rv3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="BtnCambiaEstado" destination="wxY-K2-JOr" id="axd-xO-IAJ"/>
+                        <outlet property="ImgEstado" destination="lBn-0L-Hdd" id="cnE-hN-M0A"/>
+                        <outlet property="LblEstado" destination="JcM-3X-a8e" id="jim-9z-po7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="homeless" width="120" height="240"/>
+    </resources>
+</document>
